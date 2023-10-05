@@ -8,12 +8,6 @@ async function main() {
 
   app.use(express.json());
 
-  
-  app.use(proxy('/', {
-    target: 'http://localhost:3000',
-    changeOrigin: true,
-  }))
-
   app.use("/", v1Routes);
   app.use(express.static('./src/public'))
   app.use("/Login", express.static("/public", { root: __dirname + "/public" }));

