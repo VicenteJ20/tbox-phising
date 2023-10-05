@@ -1,0 +1,194 @@
+html body > .container, html #divContenedor, .navbar.navbar-inverse.navbar-fixed-top .container {
+    max-width: 471px;
+    background-color: white;    box-shadow: 0px 0px 10px 3px rgb(0 0 0 / 9%);
+border-radius: 12px;overflow: hidden;}
+html body {
+    padding-top: 0px !important;
+    padding-left: 0;
+    background: #f2f2f2;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+html body .navbar.navbar-inverse.navbar-fixed-top {
+    width: 100%;
+    position: relative !important;
+    background-color: transparent !important;
+    background-image: url(https://www.tibox.cl/website-tibox/wp-content/uploads/2021/01/logotibox-color.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 600px;
+    margin: 0 auto;
+    padding-top: 0;
+    /* height: 84px; */
+    background: #ffffff;
+}
+
+html body section#loginForm .control-label {
+    width: 100%;
+    padding-bottom: 0;
+    letter-spacing: 0.03em;
+}
+html body section#loginForm input.form-control {
+    height: 44px;
+    padding: 6px 10px;
+    font-size: 16px;
+    line-height: 1;
+max-width: 100%;float: left;
+    position: relative;
+    display: block;
+    margin: 0 auto 10px auto;
+    width: 100%;
+    height: 45px;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid #666;
+    outline: none;
+    font-family: 'Barlow',sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #666;
+    box-shadow: 0;-webkit-box-shadow: 0 0 0px 1000px #fff inset;
+    box-shadow: 0 0 0px 1000px #fff inset;border-radius: 0;}
+html body .navbar.navbar-inverse.navbar-fixed-top .container .navbar-collapse.collapse {
+    display: none !important;
+}
+html body a.navbar-brand {
+    opacity: 0;
+    margin: 0 !important;
+}
+html body .container.body-content > h2 {
+    padding-top: 30px !important;
+    display: block;
+    font-size: 0;
+/* text-align: center; */padding-left: 20px;}
+html body .navbar.navbar-inverse.navbar-fixed-top .container {
+    background-color: transparent;
+    background-image: url(https://www.tibox.cl/website-tibox/wp-content/uploads/2021/01/logotibox-color.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+margin-top: 38px;height: 55px;margin-bottom: 34px;box-shadow: none;}
+
+html body .container.body-content {
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+html body footer p {
+    /* font-size: 0; */
+color: #686868;margin: 0;}
+
+html body footer {
+    background: #000000;
+    padding: 20px;
+    text-align: center;
+    margin-left: -35px;
+    margin-right: -35px;
+}
+
+html body footer:before {
+
+    color: white;
+}
+
+html body h4:before {
+    content: "Inicie sesión con su cuenta.";
+    font-size: 0;
+    line-height: 1.6;
+}
+html body section#loginForm h4 {
+    font-size: 0 !important;
+text-align: center;}
+html body .container.body-content > h2:before {
+    content: "Iniciar sesión";
+        /* color: #0048fb; */
+    font-style: normal;
+    font-variant-ligatures: normal;
+    font-variant-caps: normal;
+    font-weight: 700;
+    letter-spacing: 0px;
+    orphans: 2;
+    text-align: start;
+    text-indent: 0px;
+    text-transform: none;
+    white-space: normal;
+    widows: 2;
+    word-spacing: 0px;
+    -webkit-text-stroke-width: 0px;
+    background-color: rgb(255, 255, 255);
+    text-decoration-thickness: initial;
+    text-decoration-style: initial;
+    text-decoration-color: initial;
+    float: none;
+    display: inline;
+    font-family: helvetica, sans-serif;
+    font-size: 23px;
+}
+
+html body section#loginForm .control-label {
+    /* font-size: 0; */
+text-align: left;text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.03em;/* padding: 20px; */}
+
+html body section#loginForm .control-label:before {
+    font-size: 0;
+    content: "Rut Sin puntos y con guión";
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+}
+
+html body .navbar-inverse .navbar-toggle {
+    opacity: 0;
+    display: none !important;
+}
+
+html body div#divLogo {
+    opacity: 0 !important;
+}
+
+footer.col-sm-12.col-md-12.col-lg-12 {float: none;width: auto !important;background-image: url(https://soporte.tibox.cl/Content/layoutclientes/login/imagenes/logos-partners-de-tibox.png);background-size: 93%;padding-top: 75px;background-repeat: no-repeat;background-position: center 24px;margin-top: 20px;}
+
+html .col-md-10 {width: 100%;}
+
+form.normal {/* padding: 20px; */}
+
+section#loginForm {padding: 0 20px;max-width: 400px;margin: 0 auto;}
+
+input.btn.btn-default {font-size: 14px !important;
+    background-color: #025cff;
+    color: white !important;
+    font-weight: 600!important;
+    height: 42px!important;
+    border-radius: 38px!important;
+    font-size: 15px!important;
+    width: 169px !important;
+    background: #006bff !important;
+    border: 1px solid #006bff !important;
+    color: #fff!important;
+    padding: 9px 20px!important;}
+
+.col-md-offset-2.col-md-10 {margin: 0 !important;width: 100%;text-align: center;}
+
+html body section#loginForm input.form-control:focus, html body section#loginForm input.form-control:hover, html body section#loginForm input.form-control:active {border-bottom: 1px solid #0062ef;}
+
+html body section#loginForm input.form-control.input-validation-error {border-bottom: 1px solid #ef0000;}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 1px solid white;
+  -webkit-text-fill-color: #4a4a4a;
+  -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.col-md-offset-2.col-md-10:before {/* content: "Ingresar"; */}
+
+html body footer p a {color: #838383;}
